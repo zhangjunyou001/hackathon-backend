@@ -14,7 +14,7 @@ public interface EduClient {
  /**
   * 根据课程ID查询课程信息，目的在于 service-order 中的远程调用
   */
- @PostMapping("/eduService/coursefront/getCourseInfoOrder/{id}")
+ @PostMapping("/eduservice/coursefront/getCourseInfoOrder/{id}")
  public CourseWebVoOrder getCourseInfoOrder(@PathVariable("id") String id);
 
 

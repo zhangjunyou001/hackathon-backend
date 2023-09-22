@@ -21,7 +21,7 @@ import java.util.*;
 @Api(description="讲师管理") //swagger提示
 //@CrossOrigin //跨域
 @RestController
-@RequestMapping("/eduService/teacher")
+@RequestMapping("/eduservice/teacher")
 public class EduTeacherController {
 
     @Autowired
@@ -107,7 +107,7 @@ public class EduTeacherController {
      * @return
      */
     @ApiOperation(value = "分页讲师列表")
-    @PostMapping("PageCondition/{current}/{limit}")
+    @PostMapping("pageCondition/{current}/{limit}")
     public R pageTeacherCondition(@PathVariable long current, @PathVariable long limit,
                                   @RequestBody(required = false) TeacherQuery teacherQuery){
         //创建page对象

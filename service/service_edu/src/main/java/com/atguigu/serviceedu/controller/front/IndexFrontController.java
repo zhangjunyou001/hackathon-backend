@@ -17,7 +17,7 @@ import java.util.*;
 
 @Api(description = "首页数据")
 @RestController
-@RequestMapping("/eduService/indexfront")
+@RequestMapping("/eduservice/indexfront")
 //@CrossOrigin
 public class IndexFrontController {
 
